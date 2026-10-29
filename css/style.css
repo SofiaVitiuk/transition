@@ -1,0 +1,59 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  outline: 1px solid red;
+}
+
+.cards {
+  display: flex;
+  gap: 20%;
+  padding-top: 50px;
+}
+
+.card {
+  color: #002147;
+  background-color: #add8e6;
+  border-radius: 40px;
+  padding: 60px 40px;
+  font-size: 30px;
+  font-style: italic;
+   transition: transform 300ms ease-out box-shadow 300ms ease-out;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+}
+
+
+
+
+
+
+
+.section-second {
+    margin: 30px;
+}
+
+.accordion {
+    margin: 5px;
+}
+
+.arrow {
+    transform: rotate(0deg);
+    transition: transform 300ms ease;
+}
+
+.accordion.open .arrow {
+   transform: rotate(180deg);
+}
+
+.accordion-header {
+    cursor: pointer;
+    transition: transform 300ms ease;
+}
+
+.accordion-header:hover {
+    transform: scale(1.1);
+}
